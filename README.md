@@ -19,9 +19,9 @@ spec:
       containers:
       - name: bayernluft2mqtt
         image: ghcr.io/devfaz/bayernluft2mqtt:latest
-      envFrom:
-      - secretRef:
-        name: bayernluft2mqtt-secrets
+        envFrom:
+        - secretRef:
+          name: bayernluft2mqtt-secrets
 ```
 
 # Example ENV / secret
