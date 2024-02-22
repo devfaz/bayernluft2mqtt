@@ -16,7 +16,7 @@ mqtt_username=os.environ.get('MQTT_USERNAME')
 mqtt_host=os.environ.get('MQTT_HOST')
 bayernluft_host=os.environ.get('BAYERNLUFT_HOST')
 
-client = mqtt.Client()
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.username_pw_set(mqtt_username, password=mqtt_password)
 client.connect(mqtt_host, 1883, 60)
 client.loop_start()
