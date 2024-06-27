@@ -1,4 +1,4 @@
-FROM python:alpine@sha256:dc095966439c68283a01dde5e5bc9819ba24b28037dddd64ea224bf7aafc0c82
+FROM python:alpine@sha256:99fd0972496d48f2cd6302696fe33d88c9a3461ce493bf5d1b2ace93c4302a45
 
 WORKDIR /usr/src/app
 
